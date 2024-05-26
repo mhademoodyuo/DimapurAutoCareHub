@@ -1,0 +1,10 @@
+my-project/
+├── index.html
+├── cars.html
+├── services.html
+├── styles.css
+├── images/
+│   └── cars/
+│       ├── images/Fortuner.jpg
+│       ├── car2.jpg
+│       └── car3.jpg
