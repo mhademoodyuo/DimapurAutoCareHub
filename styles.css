@@ -1,93 +1,194 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
+/* Add styles for the header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
     padding: 20px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
 }
 
-section {
-    margin-bottom: 20px;
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
 }
 
-.car-list {
-    display: flex;
-    flex-wrap: wrap;
+header nav {
+    margin-top: 10px;
 }
 
-.car-item {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 10px;
-    width: calc(33.333% - 40px);
-    box-sizing: border-box;
-}
-
-.car-item img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.car-item h3 {
-    margin-top: 0;
-}
-
-.car-item p {
-    margin: 5px 0;
-}
-
-.car-item .price {
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
     font-weight: bold;
 }
 
-.car-item .discount {
-    color: red;
+header nav a:hover {
+    text-decoration: underline;
 }
 
-.car-item .favorite-btn {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+p.copyright {
+    font-size: 14px;
+    color: #777;
 }
 
-.car-item .favorite-btn:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-footer {
-    background-color: #333;
-    color: white;
+/* Add styles for the hero section */
+.hero {
     text-align: center;
-    padding: 1em 0;
+    padding: 50px 20px;
+    background-color: #eaf2ff;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Change the color of the services link to white */
+.services-link {
+    color: #ffffff; /* White color for services link */
+}
+
+
+/* Add styles for the services section */
+.services-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-section h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.services-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service-box h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Add styles for the cars for sale section */
+.cars-for-sale-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.cars-for-sale-section h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.car-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car-item {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.car-details {
+    text-align: left;
+}
+
+.car-details h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.car-details p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
 }
