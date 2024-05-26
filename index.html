@@ -20,21 +20,31 @@
     <main>
         <section id="services">
             <h2>Our Services</h2>
-            <p>We offer second-hand car sales and comprehensive repair services.</p>
+            <p>We offer second-hand car sales and comprehensive repair services. Our expert mechanics ensure that every car is in top condition before it’s listed for sale. We also provide roadside assistance and customization services.</p>
         </section>
         <section id="cars">
             <h2>Cars for Sale</h2>
-            <p>Check out our collection of certified pre-owned cars.</p>
+            <div class="car-list" id="car-list">
+                <!-- Car items will be injected here -->
+            </div>
         </section>
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Get in touch with us for more details.</p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="response"></p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Dimapur AutoCare Hub. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
-
 </body>
 </html>

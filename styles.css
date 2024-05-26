@@ -15,6 +15,7 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -35,12 +36,58 @@ section {
     margin-bottom: 20px;
 }
 
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.car-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.car-item h3 {
+    margin-top: 0;
+}
+
+.car-item p {
+    margin: 5px 0;
+}
+
+.car-item .price {
+    font-weight: bold;
+}
+
+.car-item .discount {
+    color: red;
+}
+
+.car-item .favorite-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.car-item .favorite-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
